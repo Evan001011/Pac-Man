@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Pac-Man Advanced Core Engine — Cool Maze & A* Ghost AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="titleScreen">
+        <h1 id="mainTitle">PAC-MAN</h1>
+        <button id="startButton">START GAME</button>
+    </div>
+    <div id="gameOverScreen" style="display:none; text-align:center; padding: 20px;">
+        <h1>Game Over</h1>
+        <p id="finalScore">Score: 0</p>
+        <p id="highScore">High Score: 0</p>
+        <button id="restartButton">Restart</button>
+    </div>
+    <div id="scoreboard">Score: 0 | Lives: 3 | Level: 1</div>
+    <canvas id="gameCanvas" width="560" height="620"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>
