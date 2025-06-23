@@ -1,0 +1,129 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #111;
+    color: white;
+    font-family: monospace, monospace;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scoreboard {
+    margin-bottom: 12px;
+    margin-top: 35px;
+    font-size: 12px;
+    min-width: 400px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+#gameCanvas {
+    image-rendering: pixelated;
+    height: 80vh;
+    width: 78vh;
+    border: 4px solid #ffcc00;
+    background: linear-gradient(45deg, #000011, #001122);
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#titleScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, #000022, #000010);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#mainTitle {
+    font-size: 72px;
+    color: #ffcc00;
+    margin-bottom: 30px;
+}
+
+#startButton {
+    font-size: 26px;
+    padding: 14px 40px;
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#startButton:hover {
+    background: #ffee33;
+    transform: scale(1.05);
+}
+
+#scoreboard,
+#gameCanvas {
+    display: none;
+}
+
+#gameOverScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, #000022, #000010);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    user-select: none;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffcc00;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#gameOverScreen h1 {
+    font-size: 72px;
+    margin: 30px;
+    margin-top: 150px;
+}
+
+#gameOverScreen p {
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+#gameOverScreen button {
+    font-size: 26px;
+    padding: 14px 40px;
+    margin-top: 20px;
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+#gameOverScreen button:hover {
+    background: #ffee33;
+    transform: scale(1.05);
+}
